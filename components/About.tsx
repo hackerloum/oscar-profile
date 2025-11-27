@@ -67,10 +67,14 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-r from-accent-1 via-accent-2 to-accent-3 p-[2px] rounded-2xl">
                 <div className="absolute inset-[2px] bg-black rounded-2xl" />
               </div>
-              <div className="relative w-full aspect-[3/4] bg-gradient-to-br from-accent-1/20 to-accent-3/20 rounded-2xl p-2">
-                <div className="w-full h-full bg-gray-800 rounded-xl flex items-center justify-center">
-                  <span className="text-gray-600 text-sm">Your Photo Here</span>
-                </div>
+              <div className="relative w-full aspect-[3/4] rounded-2xl p-2 overflow-hidden">
+                <Image
+                  src="/profile-photo.jpeg"
+                  alt="Oscar Metwa"
+                  fill
+                  className="object-cover rounded-xl"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <motion.div
                 className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"

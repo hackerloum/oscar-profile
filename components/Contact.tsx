@@ -21,7 +21,7 @@ const contactMethods = [
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Tanzania, Dar es Salaam",
     href: "#",
   },
 ];
