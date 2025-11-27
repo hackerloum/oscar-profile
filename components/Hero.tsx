@@ -36,18 +36,6 @@ export default function Hero() {
       {/* Animated Gradient Background */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-0 left-0 w-full h-full bg-gradient-hero opacity-20"
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 90, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
-        <motion.div
           className="absolute top-0 right-0 w-96 h-96 bg-accent-2 rounded-full blur-3xl opacity-30"
           animate={{
             x: [0, 100, 0],
