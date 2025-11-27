@@ -104,10 +104,10 @@ export default function Contact() {
           <motion.div variants={itemVariants} className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold font-sora tracking-tight mb-6">
-                Let's Work Together
+                Let&apos;s Work Together
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed mb-12">
-                Have a project in mind? I'd love to hear from you. Send me a message and I'll
+                Have a project in mind? I&apos;d love to hear from you. Send me a message and I&apos;ll
                 respond as soon as possible.
               </p>
             </div>
@@ -283,7 +283,7 @@ export default function Contact() {
                   animate={{ opacity: 1, y: 0 }}
                   className="p-4 rounded-xl bg-green-500/20 border border-green-500/50 text-green-400 text-center"
                 >
-                  Message sent successfully! I'll get back to you soon.
+                  Message sent successfully! I&apos;ll get back to you soon.
                 </motion.div>
               )}
             </form>

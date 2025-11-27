@@ -98,7 +98,7 @@ export default function Work() {
           <h2 className="text-5xl md:text-6xl font-bold font-sora tracking-tight mb-4">
             Featured Work
           </h2>
-          <p className="text-gray-400 text-lg">Selected projects I'm proud of</p>
+          <p className="text-gray-400 text-lg">Selected projects I&apos;m proud of</p>
         </motion.div>
 
         {/* Filter Tabs */}

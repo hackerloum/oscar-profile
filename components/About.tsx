@@ -98,7 +98,7 @@ export default function About() {
               className="space-y-4 text-lg text-gray-400 leading-relaxed"
             >
               <p>
-                I'm a passionate creative developer and digital designer with a focus on building
+                I&apos;m a passionate creative developer and digital designer with a focus on building
                 exceptional user experiences. With years of experience in modern web technologies,
                 I bring ideas to life through clean code and beautiful design.
               </p>
@@ -108,7 +108,7 @@ export default function About() {
               </p>
               <p>
                 I specialize in creating responsive, performant applications that push the
-                boundaries of what's possible on the web.
+                boundaries of what&apos;s possible on the web.
               </p>
             </motion.div>
 

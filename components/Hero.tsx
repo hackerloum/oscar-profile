@@ -87,7 +87,7 @@ export default function Hero() {
           variants={itemVariants}
           className="text-sm md:text-base font-medium gradient-text mb-6 uppercase tracking-wider"
         >
-          Hi, I'm Oscar
+          Hi, I&apos;m Oscar
         </motion.p>
 
         {/* Main Heading */}
