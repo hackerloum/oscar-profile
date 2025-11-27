@@ -14,7 +14,7 @@ const projects = [
     title: "E-Commerce Platform",
     category: "Web",
     description: "Modern e-commerce solution with advanced filtering and payment integration",
-    image: "/api/placeholder/800/500",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
     tech: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
     liveUrl: "#",
     githubUrl: "#",
@@ -24,7 +24,7 @@ const projects = [
     title: "Mobile Banking App",
     category: "Mobile",
     description: "Secure mobile banking application with biometric authentication",
-    image: "/api/placeholder/800/500",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop",
     tech: ["React Native", "TypeScript", "Firebase"],
     liveUrl: "#",
     githubUrl: "#",
@@ -34,7 +34,7 @@ const projects = [
     title: "SaaS Dashboard",
     category: "Web",
     description: "Comprehensive analytics dashboard with real-time data visualization",
-    image: "/api/placeholder/800/500",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
     tech: ["React", "D3.js", "Node.js", "PostgreSQL"],
     liveUrl: "#",
     githubUrl: "#",
@@ -44,7 +44,7 @@ const projects = [
     title: "Brand Identity Design",
     category: "Design",
     description: "Complete brand identity system for tech startup",
-    image: "/api/placeholder/800/500",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=500&fit=crop",
     tech: ["Figma", "Illustrator", "Photoshop"],
     liveUrl: "#",
     githubUrl: "#",
@@ -54,7 +54,7 @@ const projects = [
     title: "Fitness Tracking App",
     category: "Mobile",
     description: "AI-powered fitness tracking with personalized workout plans",
-    image: "/api/placeholder/800/500",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=500&fit=crop",
     tech: ["Flutter", "Firebase", "TensorFlow"],
     liveUrl: "#",
     githubUrl: "#",
@@ -64,7 +64,7 @@ const projects = [
     title: "Portfolio Website",
     category: "Web",
     description: "Ultra-modern portfolio website with smooth animations",
-    image: "/api/placeholder/800/500",
+    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=500&fit=crop",
     tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
     liveUrl: "#",
     githubUrl: "#",
@@ -143,9 +143,13 @@ export default function Work() {
               >
                 {/* Image Container */}
                 <div className="relative aspect-[16/10] overflow-hidden bg-gray-900">
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent-1/20 to-accent-3/20 flex items-center justify-center">
-                    <span className="text-gray-600 text-sm">Project Image</span>
-                  </div>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"
                     initial={{ opacity: 0.7 }}
@@ -207,10 +211,18 @@ export default function Work() {
               onClick={(e) => e.stopPropagation()}
               className="max-w-4xl w-full bg-background-secondary rounded-3xl overflow-hidden border border-white/10"
             >
-              <div className="relative h-64 bg-gradient-to-br from-accent-1/20 to-accent-3/20">
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 1024px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-1/20 to-accent-3/20" />
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/50 backdrop-blur-xl flex items-center justify-center hover:bg-black/70 transition-colors"
+                  className="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/50 backdrop-blur-xl flex items-center justify-center hover:bg-black/70 transition-colors z-10"
                 >
                   <X className="w-5 h-5" />
                 </button>

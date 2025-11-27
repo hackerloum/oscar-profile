@@ -9,14 +9,14 @@ const contactMethods = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@oscar.dev",
-    href: "mailto:hello@oscar.dev",
+    value: "oscarmetwa3@gmail.com",
+    href: "mailto:oscarmetwa3@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "0616041390",
+    href: "tel:+27616041390",
   },
   {
     icon: MapPin,
